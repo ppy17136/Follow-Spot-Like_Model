@@ -1,0 +1,39 @@
+units metal
+dimension 3 
+boundary s p s
+read_data	Fe_exp46x1x80_12-1_-111_101.data
+#replicate 1 30 1
+mass   1  55.847000 # Fe
+mass   2  55.847000 #Fe
+mass   3  55.847000 #Fe
+mass   4  55.847000 # Fe
+pair_style quip
+pair_coeff * * gp33b.xml "Potential xml_label=GAP_2016_10_3_60_19_29_10_891" 26 26 26 26
+neighbor	0.3 bin
+neigh_modify every 1 delay 0 check yes
+group boundary0 type 0
+group boundary1 type 1
+group boundary2 type 2
+group boundary3 type 3
+group boundary4 type 4
+group boundary union boundary4 boundary3 #out
+velocity boundary set 0.0 0.0 0.0
+fix 1 boundary setforce 0.0 0.0 0.0
+minimize 1.0e-12 1.0e-12 10000 10000
+timestep 0.002
+compute 3 all pe/atom 
+compute 4 all ke/atom
+compute 5 all coord/atom cutoff 3.0 
+#fix nve all nve 
+dump 1 all cfg 1 Fe_exp46x1x80_12-1_-111_101.*.cfg  mass type xs ys zs id c_3 c_4 c_5
+dump 2 all atom 1 Fe_exp46x1x80_12-1_-111_101.*.atom
+variable n equal count(all)
+variable P equal pe
+variable pee equal pe/$n
+# static energy calculation
+run 0
+print "@ $n"
+print "@ $P"
+print "@ ${pee}"
+
+
