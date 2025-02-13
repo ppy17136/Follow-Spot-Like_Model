@@ -1,0 +1,15 @@
+aa=2.855;
+ba=0;
+xshift=25;
+zshift=25;
+xfen=48;
+zfen=48;
+ub=1;
+vb=2;
+wb=-1;
+hb=-1;
+kb=1;
+lb=1;
+ob=1;
+pb=0;
+qb=1;
