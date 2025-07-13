@@ -33,13 +33,13 @@ This repository provides all the **simulation codes, raw data, analysis scripts,
 ## 🖼️ Main Results
 
 <p align="center">
-  <img src="docs/energy_surface.png" width="340px"><br>
+  <img src="docs/sanwei.png" width="340px"><br>
   <em>Dislocation energy surface mapped over a 49×49 grid in the x-z plane.</em>
 </p>
 
 <p align="center">
-  <img src="docs/glide_path.png" width="340px"><br>
-  <em>Winding glide trajectory of a &lt;111&gt; screw dislocation in B2-NiAl.</em>
+  <img src="docs/guijixian+denggaoxian.png" width="340px"><br>
+  <em>Winding glide trajectory of a &lt;111&gt; screw dislocation.</em>
 </p>
 
 <p align="center">
