@@ -32,13 +32,13 @@ This repository provides all the **simulation codes, raw data, analysis scripts,
 
 ## 🖼️ Main Results
 
-![Energy Surface](docs/energy_surface.png)
+![Dislocation energy surface](docs/energy_surface.tif)
 *Dislocation energy surface mapped over a 49×49 grid in the x-z plane.*
 
-![Glide Path](docs/glide_path.png)
+![Trajectory of the [-111] screw dislocation](docs/glide_path.tif)
 *Winding glide trajectory of a <111> screw dislocation in B2-NiAl.*
 
-![Core Structure](docs/core_structures.png)
+![Dissociation configuration of a <111> screw dislocation](docs/core_structures1.png)(docs/core_structures2.png)(docs/core_structures3.png)
 *Dissociation patterns of dislocation core: planar, intersection, and segmented.*
 
 > See the [paper](https://doi.org/10.1016/j.msea.2025.148609) for more detailed figures and scientific discussions.
