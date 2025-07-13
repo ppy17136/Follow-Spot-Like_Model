@@ -88,7 +88,6 @@ All key data and results in the paper can be reproduced using the scripts and in
 
 ```
 Follow-Spot-Like_Model/
-│
 
 ```
 
